@@ -1,136 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Taizai</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-    <div class="header">
-        <div><img src="assets/img/33924057_1217182951750874_6637421980834332672_n.jpg" width="150px" style="border-radius: 75px;"></div>
-        <div> Ola, sou </div>
-        <div> ETHELYN APARECIDA MARTINS DA SILVA </div>
-        <div>Desenvolvedora Java Full Stack Jr</div>
-    </div>
+    <!--Menu-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href=""><img class="rounded-circle" src="assets/img/logo.png" alt=""
+                style="width: 55px;"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " onclick="navergar()" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " onclick="navergar()" href="#imagens">Imagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " onclick="navergar()" href="#memes">Memes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "onclick="navergar()" href="#curiosidades">Curiosidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " onclick="navergar()" href="#deus">Deus</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/Menu-->
 
-    <div>
-        <h3>UM POUCO SOBRE MIM</h3>
-        <div class="verde">
-            Tenho 26 anos, atualmente moro em Guarulhos, sou formada em Engenharia da
-            Computação, finalizei no segundo semestre de 2021 na Faculdade Anhanguera. Estou estudando para me tornar
-            desenvolvedora Full Stack Java Jr. na Generation Brasil e finalizo no mes de maio. Minha meta é usar minhas
-            experiências do curso da Generation para crescer na área de desenvolvimento.
+
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container p-3">
+            <h1 class="display-4 text-center">Nanatsu No Taizai</h1>
+            <p class="lead text-center">Uma pagina dedicada ao anime</p>
         </div>
     </div>
+    <!--/jumbotron-->
 
-    <div>
-        <div>
-            <h3>ESTUDOS RECENTES</h3>
-        </div>
-        <div class="verde">
-            <div>
-                <h6>Generation Brasil</h6>
-            </div>
-            <div>
-                <p>Desenvolvedor Web Java Junior – Fullstack
-                    02/2021 - 05/2021</p>
-            </div>
-        </div>
-        <div class="verde verdeDireita">
-            <div>
-                <h6>Anhanguera</h6>
-            </div>
-            <div>
-                <p>Engenharia da Computação
-                    05/2015 - 12/2020</p>
+    <!--texte e video-->
+    <div class="container">
+
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+                <h3> Nanatsu No Taizai </h3>
+                <p>
+                    Escrito e ilustrado por Nakaba Suzuki, Nanatsu no Taizai é publicado pela Editora Kodansha na
+                    revista Weekly Shonen Magazine desde outubro de 2012. Seu animê estreou em outubro de 2014 e logo
+                    virou mania entre os japoneses.
+                </p>
+                <p>
+                    A primeira temporada do anime foi um sucesso, a segunda chegou com alguns erros, mas a terceira
+                    acabou com o coração dos fâ com diversos erros de animação.
+                </p>
 
             </div>
-        </div>
-        <div class="verde">
-            <div>
-                <h6>IGTI</h6>
+            <div class="p-2 bd-highlight">
+                <iframe width="460" height="250" src="https://www.youtube.com/embed/woYEgVAeAXM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div>
-                <p>Bootcamp Engenharia de Dados
-                    11/2020 - 02/2021</p>
 
+        </div>
+    </div>
+    <!--/texto e video-->
+
+    <hr id="imagens">
+    <!--imagens-->
+    <h1 class="text-center">Imagens</h1>
+    <div class="d-flex justify-content-center flex-md-column align-items-center">
+        <div class="mb-3">
+            <img src="assets/img/Screenshot_1.png" alt="" class="imgcards">
+        </div>
+        <div class="mb-3">
+            <img src="assets/img/nanatsu-no-taizai-animacao-ruim.jpg" alt="" class="imgcards">
+        </div>
+        <div class="mb-3">
+            <img src="assets/img/EM0aibLXsAAe8KB.jpeg" alt="" class="imgcards">
+        </div>
+
+    </div>
+    <!--/imagens-->
+
+    <hr id="memes">
+
+    <!--carrossel-->
+    <h1 class="text-center">Memes</h1>
+    <div class="d-flex justify-content-center ">
+
+        <div id="carousel" class="carousel slide  mb-3 border border-primary" data-ride="carousel">
+            <ol class="carousel-indicators bgcz">
+                <li data-target="#carouselExampleIndicatorsBlack"  data-slide-to="0" class="active "></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="one" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="one"></li>
+            </ol>
+            <div class="carousel-inner align-items-center">
+                <div class="carousel-item active align-items-center">
+                    <img class="d-block imgcar" src="assets/img/car1.png" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item align-items-center">
+                    <img class="d-block imgcar" src="assets/img/car2.png" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item align-items-center">
+                    <img class="d-block imgcar" src="assets/img/CAR3.png" alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bgcz" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bgcz" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <!--/carrossel-->
+
+    <hr id="curiosidades">
+
+    <!--Cads-->
+    <h1 class="text-center">Curiosidades</h1>
+    <div class="container " id="secao2">
+        <div class="card-deck d-flex  justify-content-center flex-wrap">
+            <div class=" card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade 1</div>
+                <div class="card-body">
+                    <p class="card-text">Meliodas foi inspirado no personagem das lendas do rei Arthur de mesmo nome pai
+                        de Tristão um dos cavaleiros da travuna redonda. E essa é uma das varias referências das lendas
+                        Arthurianas no anime.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade 2</div>
+                <div class="card-body">
+
+                    <p class="card-text">O Ban foi inspirado por Lancelot também da era Arthuriana. O Ban das lendas era
+                        casado com Elaine o mesmo nome de sua amada no anime.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade 2</div>
+                <div class="card-body">
+
+                    <p class="card-text">King não gosta de bêbados. Este é um dos motivos de seu repudio a Ban. Ele
+                        tambem fez sua propria roupa de de Dia</p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade 3</div>
+                <div class="card-body">
+
+                    <p class="card-text">Apesar de sua aparência Meliodas é o mas velho dos sete pecados capitais. Ele
+                        tem mas de três mil anos de idade</p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curiosidade 4</div>
+                <div class="card-body">
+
+                    <p class="card-text">Hawk é um Deus .A Verdade é que o porquinho Hawk é capaz de tudo.</p>
+                </div>
             </div>
         </div>
     </div>
+    <!--/cards-->
 
-    <div>
-        <div>
-            <h3>ULTIMAS EXPERIENCIAS</h3>
+<hr >
+
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid " >
+        <div class="container p-3" id="deus">
+            <div class="row justify-content-md-center">
+                <h1 class="display-4 text-center">Todos saudam o deus Hawk</h1>
+            </div>
+            <div class="row justify-content-md-center"><img style="align-items: center;" src="assets/img/hawk.jpg"
+                    alt=""></div>
+
         </div>
-        <div class="verde">
-            <div>
-                <h6>BVU LOGISTICA E TRANSPORTES</h6>
-            </div>
-            <div>
-                <p>03/17 - 09/19</p>
-                <p>
-                    Estagiária
-                    Manutenção e suporte a equipamentos em geral
-                    da empresa em Guarulhos e na filial no estado
-                    da Bahia.
-                </p>
-            </div>
-        </div>
-        <div class="verde verdeDireita">
-            <div>
-                <h6>CARTÓRIO ELEITORAL</h6>
-            </div>
-            <div>
-                <p>04/15 - 01/16</p>
-                <p>
-                    Estagiária
-                    Atendimento a eleitores e auxílio em
-                    atividades administrativas.
-                </p>
-            </div>
-        </div>
-        <div class="verde">
-            <div>
-                <h6>TRIBUNAL DE JUSTICA ELEITORAL</h6>
-            </div>
-            <div>
-                <p>09/14 - 11/2014</p>
-                <p>
-                    Técnica de urna eletrônica
-                    Preparar urnas eletrônicas para eleições.
-                </p>
-            </div>
-        </div>
+    </div>
+    <!--/jumbotron-->
 
-        <div>
-            <div>
-                <h3>PORTIFOLIO</h3>
-            </div>
-            <a class="center" href="https://github.com/Ethelynaparecida"><img alt="icone de GitHub" src="assets/img/github.png"
-                    width="10%"></a>
-        </div>
+    <hr>
 
-        <div>
-            <h3>CONTATO</h3>
-        </div>
-        <div class="center">
-
-            <a href="mailto:ethelynsilva@outlook.com"><img alt="icone de um envelope" src="assets/img/email.png" width="10%"
-                    style="align-items: flex-end;"></a>
-            <a href="https://www.linkedin.com/in/ethelyn-aparecida-380a68a0/"><img alt="icone do linkedIn" src="assets/img/linkedin.png"
-                    width="10%"></a>
+    <!--Formulario de contato-->
 
 
+    <div class="d-flex justify-content-center">
+        <div class=" flex-sm
+          p-3">
+            <form class=" form-inline">
+                <div class="form-group w-100 ">
+                    <label for="email">Endereço de email</label>
+                    <input type="email" class="form-control" id="email" onkeyup="validaEmail()"
+                        placeholder="nome@exemplo.com"> <strong class="p-3" id="txtEmail"></strong>
+                </div>
+            </form>
+            <label for="nome">Nome</label>
+            <form class=" form-inline">
+                <div class="form-group w-100">
 
+                    <input type="text" class="form-control" placeholder="Nome" id="nome" onkeyup="validaNome()">
+                    <strong id="txtNome" class="p-3"></strong>
+                </div>
+            </form>
+            <label for="Assunto">Assunto</label>
+            <form class=" form-inline">
+                <div class="form-group w-100">
+
+                    <textarea class="form-control" id="assunto" onkeyup="validaAssunto()" rows="3"
+                        placeholder="Assunto"></textarea>
+                </div>
+            </form>
+            <div class="form-group ">
+                <button type="button" class="btn btn-outline-success mt-3" onclick="enviar()">Enviar</button>
+            </div>
+            </form>
         </div>
 
 
-        <script src="assets/js/script.js"></script>
+
+    </div>
+
+    <hr>
+    <!--/Formulario de contato-->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-center ">
+                <a href="https://github.com/Ethelynaparecida" target="_blank" class="p-3">
+                    <img class="redes" src="assets/img/github.png">
+                </a>
+                <a href="https://www.linkedin.com/in/ethelyn-aparecida-380a68a0/" target="_blank" class="p-3">
+                    <img class="redes" src="assets/img/linkedin.png">
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <p class="center"> Ethelyn Silva &copy;</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
