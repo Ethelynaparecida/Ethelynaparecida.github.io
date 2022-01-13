@@ -16,6 +16,28 @@
 
 <body>
 
+    <script type = "text/javascript" >
+VI_API = {};
+VI_API.license = 'VI-88888759-1';
+VI_API.source = 2;
+VI_API.target = 22;
+VI_API.eyeCatcher = 1;
+VI_API.showEyeCatcher = 1;
+VI_API.launchType = 'embedded';
+VI_API.customVars = [
+    { 'name': 'uncp', 'value': '2882' },
+    { 'name': 'nome', 'value': 'Nome Teste' }
+];
+(function() {
+    var vi = document.createElement('script');
+    vi.type = 'text/javascript';
+    vi.async = true;
+    vi.src = 'https://unimedcampres.virtualinteractions.com.br/script/tracking.js?ms=' + new Date().getTime();
+    var vis = document.getElementsByTagName('script')[0];
+    vis.parentNode.insertBefore(vi, vis);
+})(); 
+</script>
+    
     <!--Menu-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href=""><img class="rounded-circle" src="assets/img/logo.png" alt=""
