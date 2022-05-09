@@ -37,7 +37,20 @@ VI_API.customVars = [
     vis.parentNode.insertBefore(vi, vis);
 })(); 
 </script>
-    
+    <script type = "text/javascript">
+    var VI_API = {};
+    VI_API.license = 'VI-88888776-1';
+    VI_API.source = 1;
+    VI_API.customVars = [{'name': 'nome'   , 'value': 'Teste de Nome'},
+    {'name': 'email'  , 'value': 'Email@teste.com'},]; 
+    (function() {
+    var vi = document.createElement('script'); 
+    vi.type = 'text/javascript'; vi.async = true;
+    vi.src = 'https://privalia.virtualinteractions.com.br/script/tracking.js?ms='+ new Date().getTime();
+    var vis = document.getElementsByTagName('script')[0]; 
+    vis.parentNode.insertBefore(vi, vis);
+    })();
+    </script>
     <!--Menu-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href=""><img class="rounded-circle" src="assets/img/logo.png" alt=""
