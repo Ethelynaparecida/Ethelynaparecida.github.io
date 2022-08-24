@@ -15,6 +15,25 @@
 </head>
 
 <body>
+    
+    <script type="text/javascript">
+    var VI_API = {};
+    VI_API.license = 'VI-88888752-1';
+    VI_API.source = 2;
+    VI_API.channel = 1;
+    VI_API.target = 101;
+    VI_API.customVars = [
+        { 'name': 'nome', 'value': 'NOME AQUI' },
+        { 'name': 'contrato', 'value': 'NUMERO DE CONTRATO AQUI' },
+        { 'name': 'cnpj', 'value': 'CNPJ AQUI' }];
+    (function () {
+        var vi = document.createElement('script'); 
+        vi.type = 'text/javascript'; vi.async = true;
+        vi.src = 'https://unimedcampinasspmweb.virtualinteractions.com.br/script/tracking.js?ms=' + new Date().getTime();
+        var vis = document.getElementsByTagName('script')[0]; vis.parentNode.insertBefore(vi, vis);
+    })();
+</script>
+    
 
 
     <script type = "text/javascript">
