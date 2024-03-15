@@ -17,34 +17,44 @@
 <body>
     
     <script type="text/javascript">
-
-
-window.VI_API = {}; 
-window.VI_API.license = 'VI-88888736-1'; 
-window.VI_API.source = 41; 
-window.VI_API.channel = 1; 
-window.VI_API.target = 61;
-
+var loadAVI = function() {
  
-
-
+window.VI_API = {};
+ 
+window.VI_API.license = 'VI-88888730-1';
+ 
+window.VI_API.source = 1;
+ 
+window.VI_API.target = 1;
+ 
+window.VI_API.channel= 1;
+ 
+window.VI_API.eyeCatcher = 1;
+ 
+window.VI_API.showEyeCatcher = 1;
+ 
+window.VI_API.launchType = 'embedded';
+ 
 (function() {
-
  
-
-var vi = document.createElement('script'); vi.type = 'text/javascript'; vi.async = true;
-
+var vi = document.createElement('script');
  
-
-vi.src = 'https://edusense2.virtualinteractions.com.br/script/tracking.js?ms=' + new Date().getTime();
-
+vi.type = 'text/javascript';
  
-
-var vis = document.getElementsByTagName('script')[0]; vis.parentNode.insertBefore(vi, vis);
-
+vi.async = true;
  
+vi.src = 'https://energisaprev.virtualinteractions.com.br/script/tracking.js?ms=' + new Date().getTime();
+ 
+var vis = document.getElementsByTagName('script')[0];
+ 
+vis.parentNode.insertBefore(vi, vis);})
+ 
+();
+ 
+};
+ 
+loadAVI();
 
-})();
 </script>
     
     <!--Menu-->
